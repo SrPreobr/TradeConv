@@ -1,0 +1,28 @@
+Проект 
+D:\Preobr\Android\TradeConv\TradeConv.dproj
+
+настройка даты по умолчанию начиная с которой данные основной базы переносятся в базу SQLite
+
+Поле MonthCalendar1.date  (01.09.2016)
+
+Антивирус Comade делает невидимым файл базы в окнах Win7.
+После завершения процесса  cmdagent.exe в Диспетчере Задач, программа работает нормально.
+
+1.Для сайта sentasev.ru создать базу Test.s3db из общей базы включив таблицы:
+  -Agent
+  -EdIzmer
+  -Proizv
+  -Tovar
+
+
+1.Преобразование текстовых файлов с разделителем Таб
+    NameFromLiterTxt : string = 'd:\Preobr\Web\PanovTatar\Files\КаталогВспомогательныефайлы\Liter.txt';
+    NameFromTemsTxt  : string = 'd:\Preobr\Web\PanovTatar\Files\КаталогВспомогательныефайлы\Tems.txt';
+
+в базу
+
+    NameSqliteBaseFromTxt : string = 'd:\Preobr\Web\PanovTatar\Files\КаталогВспомогательныефайлы\Katalog.s3db';
+
+3. Для работы программы нужен dll файл sqlite3.dll причем если прога компилируется для Win32, то и sqlite3.dll именно версии 32 
+   из архива sqlite-dll-win32-x86-3380200.zip.
+   Легче всего кинуть его в папку где лежит исполняемый файл TradeConv2.exe
